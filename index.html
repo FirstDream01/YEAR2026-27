@@ -152,6 +152,7 @@ const BOOT_CODE=[
 "export default ready;",
 "",
 ">>> LOADING 2026"
+    "Designed by "KAAL"
 ];
 
 const boot=document.getElementById("boot");
@@ -189,7 +190,7 @@ function spawnWord(text,isDreams){
   el.className="word";
   el.textContent=text;
   el.style.zIndex=isDreams?10:1;
-  const size=isDreams?(IS_MOBILE?140:180):(IS_MOBILE?40:70);
+  const size=isDreams?(IS_MOBILE?110:150):(IS_MOBILE?40:70);
   el.style.fontSize=size+"px";
   document.body.appendChild(el);
   const r=el.getBoundingClientRect();
